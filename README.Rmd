@@ -1,11 +1,17 @@
 ---
-title: "dospert"
-author: "Geun Hae Ahn"
-date: "September 4, 2015"
-output: 
-  html_document: 
-    theme: cosmo
+output:
+  md_document:
+    variant: markdown_githubs
 ---
+
+#Overview
+
+```{r, eval=FALSE}
+
+library(devtools)
+devtools::install_github("schafik/dospert")
+
+```
 
 dospert is a pacakge used to aid the analysis of DOSPERT data. It includes three functions:
 
