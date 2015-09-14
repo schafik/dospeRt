@@ -38,7 +38,7 @@ Data for analysis is raw data downloaded from qualtrics. File formats supported 
 
 
 ```{r echo = FALSE, message= FALSE, warning=FALSE}
-setwd("/git_repositories/betterment/data/raw_data/")
+# setwd("/git_repositories/betterment/data/raw_data/")
 #reading in libraries##############################################
 library(readr)
 library(plyr)
