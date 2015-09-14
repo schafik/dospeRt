@@ -43,11 +43,6 @@ dcsv <- read.csv("pilot_data.csv", header = TRUE) # [d]ospert in [csv]
 ```
 
 ```
-## Warning in file(file, "rt"): cannot open file 'pilot_data.csv': No such
-## file or directory
-```
-
-```
 ## Error in file(file, "rt"): cannot open the connection
 ```
 
