@@ -35,7 +35,7 @@ Data for analysis is raw data downloaded from qualtrics. File formats supported 
 
 
 ```{r echo = FALSE, message= FALSE, warning=FALSE}
-setwd("/git_repositories/betterment_project/data/raw_data")
+setwd("/git_repositories/betterment/data/raw_data/")
 #reading in libraries##############################################
 library(readr)
 library(plyr)
@@ -58,7 +58,7 @@ head(dcsv[, 1:10])
 
 ```{r}
 
-dxml <- xmlToDataFrame("Betterment_Pilot_8_7.xml", stringsAsFactors = F) %>% filter(uid != "")  
+dxml <- xmlToDataFrame("pilot_data.xml", stringsAsFactors = F) %>% filter(uid != "")  
 # [d]ospert in [xml]
 # unique identifying variable for this dataset is 'uid'
 # removed observations without uid variable value

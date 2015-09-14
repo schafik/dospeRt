@@ -35,9 +35,6 @@ Data for analysis is raw data downloaded from qualtrics. File formats supported 
 
 
 
-```
-## Error in setwd("/git_repositories/betterment_project/data/raw_data"): cannot change working directory
-```
 
 
 
@@ -77,11 +74,11 @@ head(dcsv[, 1:10])
 
 
 ```r
-dxml <- xmlToDataFrame("Betterment_Pilot_8_7.xml", stringsAsFactors = F) %>% filter(uid != "")  
+dxml <- xmlToDataFrame("pilot_data.xml", stringsAsFactors = F) %>% filter(uid != "")  
 ```
 
 ```
-## Error in xmlToDataFrame(xmlParse(doc), colClasses, homogeneous, collectNames, : error in evaluating the argument 'doc' in selecting a method for function 'xmlToDataFrame': Error: XML content does not seem to be XML: 'Betterment_Pilot_8_7.xml'
+## Error in xmlToDataFrame(xmlParse(doc), colClasses, homogeneous, collectNames, : error in evaluating the argument 'doc' in selecting a method for function 'xmlToDataFrame': Error: XML content does not seem to be XML: 'pilot_data.xml'
 ```
 
 ```r
