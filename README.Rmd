@@ -1,18 +1,20 @@
 
 #Overview
+dospert is a pacakge used to aid the analysis of DOSPERT data. It includes three functions:
 
+- **d_clean**: d_clean function returns raw DOSPERT data in a panel format. 
+- **d_sum**: d_sum function returns sum of DOSPERT responses by domain and scales.
+- **d_score**: d_score returns DOSPERT scores attached to the original input dataframe.
+
+#Installation
+
+make sure you have `devtools` installed and run the following code:
 ```{r, eval=FALSE}
 
 library(devtools)
 devtools::install_github("schafik/dospert")
 
 ```
-
-dospert is a pacakge used to aid the analysis of DOSPERT data. It includes three functions:
-
-- **d_clean**: d_clean function returns raw DOSPERT data in a panel format. 
-- **d_sum**: d_sum function returns sum of DOSPERT responses by domain and scales.
-- **d_score**: d_score returns DOSPERT scores attached to the original input dataframe.
 
 
 # DOSPERT domains and scales
