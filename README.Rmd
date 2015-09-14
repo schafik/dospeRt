@@ -49,14 +49,14 @@ library(dospert)
 ```
 
 
-```{r}
+```{r, warning=F, message=FALSE}
 
 dcsv <- read.csv("pilot_data.csv", header = TRUE) # [d]ospert in [csv]
 head(dcsv[, 1:10])
 
 ```
 
-```{r}
+```{r, warning=F, message=FALSE}
 
 dxml <- xmlToDataFrame("pilot_data.xml", stringsAsFactors = F) %>% filter(uid != "")  
 # [d]ospert in [xml]
