@@ -42,13 +42,6 @@ Data for analysis is raw data downloaded from qualtrics. File formats supported 
 
 ```r
 dcsv <- read.csv("pilot_data.csv", header = TRUE) # [d]ospert in [csv]
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
-```
-
-```r
 head(dcsv[, 1:10])
 ```
 
@@ -72,13 +65,6 @@ head(dcsv[, 1:10])
 
 ```r
 dxml <- xmlToDataFrame("pilot_data.xml", stringsAsFactors = F) %>% filter(uid != "")  
-```
-
-```
-## Error in xmlToDataFrame(xmlParse(doc), colClasses, homogeneous, collectNames, : error in evaluating the argument 'doc' in selecting a method for function 'xmlToDataFrame': Error: XML content does not seem to be XML: 'pilot_data.xml'
-```
-
-```r
 # [d]ospert in [xml]
 # unique identifying variable for this dataset is 'uid'
 # removed observations without uid variable value
