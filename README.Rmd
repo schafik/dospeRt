@@ -46,7 +46,6 @@ library(xtable)
 library(texreg)
 library(stargazer)
 library(dospert)
-
 ```
 
 
